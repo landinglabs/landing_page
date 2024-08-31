@@ -1,4 +1,4 @@
-import { MoveRight, PhoneCall } from "lucide-react";
+import { PhoneCallIcon, RocketIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -8,31 +8,26 @@ export const Hero = () => (
       <div className="grid grid-cols-1 gap-8 items-center md:grid-cols-2">
         <div className="flex gap-4 flex-col">
           <div>
-            <Badge variant="outline">We&apos;re live!</Badge>
+            <Badge variant="outline">Chegamos!</Badge>
           </div>
           <div className="flex gap-4 flex-col">
             <h1 className="text-5xl md:text-7xl max-w-lg tracking-tighter text-left font-regular font-bold">
-              Empowering Innovations, Shaping the Future!
+              Desbloqueando Inovações, Moldando o Futuro
             </h1>
             <p className="text-xl leading-relaxed tracking-tight text-muted-foreground max-w-md text-left">
-              Unlock the potential of technology with our cutting-edge solutions
-              designed to drive your success.
+              Aumente o potencial da tecnologia com nossas soluções de ponta, projetadas para impulsionar o seu sucesso.
             </p>
           </div>
           <div className="flex flex-col md:flex-row gap-4">
             <Button size="lg" className="gap-4" variant="outline">
-              Jump on a call <PhoneCall className="w-4 h-4" />
+              Venha explorar mais <RocketIcon className="w-4 h-4" />
             </Button>
             <Button size="lg" className="gap-4">
-              Sign up here <MoveRight className="w-4 h-4" />
+              Comece agora! <PhoneCallIcon className="w-4 h-4" />
             </Button>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-8">
-          <div className="bg-muted rounded-md aspect-square"></div>
-          <div className="bg-muted rounded-md row-span-2"></div>
-          <div className="bg-muted rounded-md aspect-square"></div>
-        </div>
+
       </div>
     </div>
   </div>
