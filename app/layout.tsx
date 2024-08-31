@@ -26,9 +26,10 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+        <Footer />
         </ThemeProvider>
       </body>
-      <Footer />
+      
     </html>
   );
 }
