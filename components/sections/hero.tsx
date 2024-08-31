@@ -11,14 +11,12 @@ export const Hero = () => (
             <Badge variant="outline">We&apos;re live!</Badge>
           </div>
           <div className="flex gap-4 flex-col">
-            <h1 className="text-5xl md:text-7xl max-w-lg tracking-tighter text-left font-regular">
-              This is the start of something!
+            <h1 className="text-5xl md:text-7xl max-w-lg tracking-tighter text-left font-regular font-bold">
+              Empowering Innovations, Shaping the Future!
             </h1>
             <p className="text-xl leading-relaxed tracking-tight text-muted-foreground max-w-md text-left">
-              Managing a small business today is already tough. Avoid further
-              complications by ditching outdated, tedious trade methods. Our
-              goal is to streamline SMB trade, making it easier and faster than
-              ever.
+              Unlock the potential of technology with our cutting-edge solutions
+              designed to drive your success.
             </p>
           </div>
           <div className="flex flex-col md:flex-row gap-4">
