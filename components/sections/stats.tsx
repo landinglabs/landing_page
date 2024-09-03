@@ -10,14 +10,13 @@ export const Stats = () => (
             <Badge>Platform</Badge>
           </div>
           <div className="flex gap-2 flex-col">
-            <h2 className="text-xl md:text-3xl md:text-5xl tracking-tighter lg:max-w-xl font-regular text-left">
-              This is the start of something new
+            <h2 className="text-xl md:text-5xl tracking-tighter lg:max-w-xl font-regular text-left">
+              Resultados Reais da Transformação Digital
             </h2>
             <p className="text-lg lg:max-w-sm leading-relaxed tracking-tight text-muted-foreground text-left">
-              Managing a small business today is already tough. Avoid further
-              complications by ditching outdated, tedious trade methods. Our
-              goal is to streamline SMB trade, making it easier and faster than
-              ever.
+              Descubra como a transformação digital pode revolucionar sua
+              empresa com ganhos expressivos em receita, eficiência, satisfação
+              do cliente e velocidade de mercado.
             </p>
           </div>
         </div>
@@ -26,49 +25,37 @@ export const Stats = () => (
             <div className="flex gap-0 flex-col justify-between p-6 border rounded-md">
               <MoveUpRight className="w-4 h-4 mb-10 text-primary" />
               <h2 className="text-4xl tracking-tighter max-w-xl text-left font-regular flex flex-row gap-4 items-end">
-                500.000
-                <span className="text-muted-foreground text-sm tracking-normal">
-                  +20.1%
-                </span>
+                23%
               </h2>
               <p className="text-base leading-relaxed tracking-tight text-muted-foreground max-w-xl text-left">
-                Monthly active users
+                Aumento da Receita
               </p>
             </div>
             <div className="flex gap-0 flex-col justify-between p-6 border rounded-md">
               <MoveDownLeft className="w-4 h-4 mb-10 text-destructive" />
               <h2 className="text-4xl tracking-tighter max-w-xl text-left font-regular flex flex-row gap-4 items-end">
-                20.105
-                <span className="text-muted-foreground text-sm tracking-normal">
-                  -2%
-                </span>
+                30%
               </h2>
               <p className="text-base leading-relaxed tracking-tight text-muted-foreground max-w-xl text-left">
-                Daily active users
+                Redução de Custos Operacionais
               </p>
             </div>
             <div className="flex gap-0 flex-col justify-between p-6 border rounded-md">
               <MoveUpRight className="w-4 h-4 mb-10 text-primary" />
               <h2 className="text-4xl tracking-tighter max-w-xl text-left font-regular flex flex-row gap-4 items-end">
-                $523.520
-                <span className="text-muted-foreground text-sm tracking-normal">
-                  +8%
-                </span>
+                20%
               </h2>
               <p className="text-base leading-relaxed tracking-tight text-muted-foreground max-w-xl text-left">
-                Monthly recurring revenue
+                Melhoria na Satisfação do Cliente
               </p>
             </div>
             <div className="flex gap-0 flex-col justify-between p-6 border rounded-md">
               <MoveUpRight className="w-4 h-4 mb-10 text-primary" />
               <h2 className="text-4xl tracking-tighter max-w-xl text-left font-regular flex flex-row gap-4 items-end">
-                $1052
-                <span className="text-muted-foreground text-sm tracking-normal">
-                  +2%
-                </span>
+                50%
               </h2>
               <p className="text-base leading-relaxed tracking-tight text-muted-foreground max-w-xl text-left">
-                Cost per acquisition
+                Aceleração do Tempo de Mercado
               </p>
             </div>
           </div>
