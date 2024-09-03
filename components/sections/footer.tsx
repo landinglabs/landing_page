@@ -3,50 +3,39 @@ import Link from "next/link";
 export const Footer = () => {
   const navigationItems = [
     {
-      title: "Home",
-      href: "/",
+      title: "Início",
+      href: "#home",
       description: "",
     },
     {
-      title: "Product",
+      title: "Produtos",
       description: "Managing a small business today is already tough.",
       items: [
         {
-          title: "Reports",
-          href: "/",
+          title: "Landing Page",
+          href: "#landingpage",
         },
         {
-          title: "Statistics",
-          href: "/",
+          title: "E-Commerce",
+          href: "#ecommerce",
         },
         {
-          title: "Dashboards",
-          href: "/",
+          title: "CRM",
+          href: "#crm",
         },
-        {
-          title: "Recordings",
-          href: "/",
-        },
+
       ],
     },
     {
-      title: "Company",
+      title: "Empresa",
       description: "Managing a small business today is already tough.",
       items: [
         {
-          title: "About us",
+          title: "Sobre nós",
           href: "/",
         },
         {
-          title: "Fundraising",
-          href: "/",
-        },
-        {
-          title: "Investors",
-          href: "/",
-        },
-        {
-          title: "Contact us",
+          title: "Fale conosco",
           href: "/",
         },
       ],
@@ -60,18 +49,13 @@ export const Footer = () => {
           <div className="flex gap-8 flex-col items-start">
             <div className="flex gap-2 flex-col">
               <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular text-left">
-                TWBlocks™
+                Landing Labs™
               </h2>
               <p className="text-lg max-w-lg leading-relaxed tracking-tight text-background/75 text-left">
-                Managing a small business today is already tough.
+                Comece aqui sua transformação digital.
               </p>
             </div>
             <div className="flex gap-20 flex-row">
-              <div className="flex flex-col text-sm max-w-lg leading-relaxed tracking-tight text-background/75 text-left">
-                <p>1 Tailwind Way</p>
-                <p>Menlo Park</p>
-                <p>CA 94025</p>
-              </div>
               <div className="flex flex-col text-sm max-w-lg leading-relaxed tracking-tight text-background/75 text-left">
                 <Link href="/">Terms of service</Link>
                 <Link href="/">Privacy Policy</Link>
@@ -86,18 +70,18 @@ export const Footer = () => {
               >
                 <div className="flex flex-col gap-2">
                   {item.href ? (
-                    <Link
+                    <a
                       href={item.href}
                       className="flex justify-between items-center"
                     >
                       <span className="text-xl">{item.title}</span>
-                    </Link>
+                    </a>
                   ) : (
                     <p className="text-xl">{item.title}</p>
                   )}
                   {item.items &&
                     item.items.map((subItem) => (
-                      <Link
+                      <a
                         key={subItem.title}
                         href={subItem.href}
                         className="flex justify-between items-center"
@@ -105,7 +89,7 @@ export const Footer = () => {
                         <span className="text-background/75">
                           {subItem.title}
                         </span>
-                      </Link>
+                      </a>
                     ))}
                 </div>
               </div>
