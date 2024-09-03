@@ -12,7 +12,6 @@ export default function Home() {
       <Features header="E-Commerce" description="Impulsione suas vendas com nosso E-commerce sob medida" bulletpoints={[{name:'Plataforma Personalizada',description:'Alinhada à sua marca para atrair mais clientes.'},{name:'Otimização de Vendas',description:'Converta visitantes em compradores com facilidade.'},{name:'Integração Completa',description: 'Conecte-se às principais ferramentas de marketing.'}]}/>
       <Features header="CRM" description="Melhore suas relações com nosso CRM sob medida" bulletpoints={[{name:'Personalização Total',description:'Alinhado às suas necessidades para melhor gestão de clientes.'},{name:'Otimização de Processos',description:'Automatize tarefas e melhore a eficiência.'},{name:'Integração Fácil',description: 'Conecte-se às suas ferramentas favoritas sem complicações.'}]}/>
       <Stats />
-      <Contacts />
       <FAQ />
     </main>
   );
