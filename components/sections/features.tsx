@@ -5,6 +5,7 @@ interface FeaturesProps {
   header: string;
   description: string;
   bulletpoints: Array<BulletPoint>;
+  anchor: string;
 }
 
 interface BulletPoint {
@@ -14,6 +15,7 @@ interface BulletPoint {
 
 export const Features = (props: FeaturesProps) => (
   <div className="w-full pt-10 lg:py-40">
+    <div className="class-element-anchor" id={props.anchor}></div>
     <div className="container mx-auto">
       <div className="grid rounded-lg container py-8 grid-cols-1 gap-8 items-center lg:grid-cols-2">
         <div className="flex gap-10 flex-col">
