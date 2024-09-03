@@ -3,6 +3,7 @@ import { Button } from "../ui/button";
 
 export const Hero = () => (
   <div className="w-full">
+    <div className="class-element-home-anchor" id='home'></div>
     <div className="container mx-auto">
       <div className="flex gap-8 py-20 lg:py-40 items-center justify-center flex-col">
 
