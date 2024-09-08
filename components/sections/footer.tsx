@@ -1,12 +1,5 @@
-import Link from "next/link";
-
 export const Footer = () => {
   const navigationItems = [
-    {
-      title: "Início",
-      href: "#home",
-      description: "",
-    },
     {
       title: "Produtos",
       description: "Managing a small business today is already tough.",
@@ -23,7 +16,6 @@ export const Footer = () => {
           title: "CRM",
           href: "#crm",
         },
-
       ],
     },
     {
@@ -43,7 +35,7 @@ export const Footer = () => {
   ];
 
   return (
-    <div className="w-full py-20 lg:py-40 bg-foreground text-background">
+    <div className="w-full py-20 lg:py-40 bg-foreground text-background p-8 md:p-24">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <div className="flex gap-8 flex-col items-start">
@@ -54,12 +46,6 @@ export const Footer = () => {
               <p className="text-lg max-w-lg leading-relaxed tracking-tight text-background/75 text-left">
                 Comece aqui sua transformação digital.
               </p>
-            </div>
-            <div className="flex gap-20 flex-row">
-              <div className="flex flex-col text-sm max-w-lg leading-relaxed tracking-tight text-background/75 text-left">
-                <Link href="/">Terms of service</Link>
-                <Link href="/">Privacy Policy</Link>
-              </div>
             </div>
           </div>
           <div className="grid lg:grid-cols-3 gap-10 items-start">
