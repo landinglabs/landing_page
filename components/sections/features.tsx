@@ -85,16 +85,21 @@ export const Features = () => {
       <div className="container mx-auto">
         <div className="flex text-center justify-center items-center gap-4 flex-col">
           <div className="flex gap-2 flex-col">
-            <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl text-center font-bold">
+            <h2 className="text-3xl md:text-5xl tracking-tighter max-w-5xl text-center font-bold">
               Conheça nossos produtos
             </h2>
-            <p className="text-lg leading-relaxed tracking-tight text-muted-foreground max-w-xl text-center">
-              Managing a small business today is already tough.
+            <p className="text-lg leading-relaxed tracking-tight text-muted-foreground max-w-5xl text-center">
+              Descubra soluções inovadoras e de alta qualidade, projetadas para
+              atender às suas necessidades e transformar a sua experiência de
+              compra.
             </p>
           </div>
           <div className="grid text-left grid-cols-1 lg:grid-cols-3 w-full gap-8 mt-16">
             {features.map((item) => (
-              <Card className="w-full rounded-md flex flex-col justify-between" key={item.header}>
+              <Card
+                className="w-full rounded-md flex flex-col justify-between"
+                key={item.header}
+              >
                 <CardHeader>
                   <CardTitle>
                     <span className="flex flex-row gap-4 items-center font-normal">
@@ -123,7 +128,7 @@ export const Features = () => {
                     </div>
                   </div>
                 </CardContent>
-                <CardFooter >
+                <CardFooter>
                   <Button variant="outline" className="gap-4">
                     Saiba mais <MoveRight className="w-4 h-4" />
                   </Button>
