@@ -1,5 +1,12 @@
+import Link from "next/link";
+
 export const Footer = () => {
   const navigationItems = [
+    {
+      title: "Início",
+      href: "#home",
+      description: "",
+    },
     {
       title: "Produtos",
       description: "Managing a small business today is already tough.",
