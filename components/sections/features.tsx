@@ -1,64 +1,197 @@
-import { Check, PhoneCallIcon, RocketIcon } from "lucide-react";
+import { Check, MoveRight, PhoneCall } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "../ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
-interface FeaturesProps {
-  header: string;
-  description: string;
-  bulletpoints: Array<BulletPoint>;
-  anchor: string;
-}
-
-interface BulletPoint {
-  name: string;
-  description: string;
-}
-
-export const Features = (props: FeaturesProps) => (
-  <div className="w-full pt-10 lg:py-40">
-    <div className="class-element-anchor" id={props.anchor}></div>
+export const Features = () => (
+  <div className="w-full bg-white text-black py-8">
     <div className="container mx-auto">
-      <div className="grid rounded-lg container py-8 grid-cols-1 gap-8 items-center lg:grid-cols-2">
-        <div className="flex gap-10 flex-col">
-          <div className="flex gap-4 flex-col">
-            <div>
-              <Badge variant="outline">Platform</Badge>
-            </div>
-            <div className="flex gap-2 flex-col">
-              <h2 className="text-3xl lg:text-5xl tracking-tighter max-w-xl text-left font-regular">
-                {props.header}
-              </h2>
-              <p className="text-lg leading-relaxed tracking-tight text-muted-foreground max-w-xl text-left">
-                {props.description}
-              </p>
-            </div>
-          </div>
-          <div className="grid lg:pl-6 grid-cols-1 sm:grid-cols-3 items-start lg:grid-cols-1 gap-6">
-            {props.bulletpoints.map((item) => {
-              return (
-                <div
-                  key={item.name}
-                  className="flex flex-row gap-6 items-start"
-                >
-                  <Check className="w-4 h-4 mt-2 text-primary" />
-                  <div className="flex flex-col gap-1">
-                    <p>{item.name}</p>
-                    <p className="text-muted-foreground text-sm">
-                      {item.description}
-                    </p>
+      <div className="flex text-center justify-center items-center gap-4 flex-col">
+        <div className="flex gap-2 flex-col">
+          <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl text-left font-bold">
+            Conheça nossos produtos
+          </h2>
+          <p className="text-lg leading-relaxed tracking-tight text-muted-foreground max-w-xl text-left">
+            Managing a small business today is already tough.
+          </p>
+        </div>
+        <div className="grid text-left grid-cols-1 lg:grid-cols-3 w-full gap-8 mt-16">
+          <Card className="w-full rounded-md">
+            <CardHeader>
+              <CardTitle>
+                <span className="flex flex-row gap-4 items-center font-normal">
+                  Startup
+                </span>
+              </CardTitle>
+              <CardDescription>
+                Our goal is to streamline SMB trade, making it easier and faster
+                than ever for everyone and everywhere.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-col gap-8 justify-start">
+                <p className="flex flex-row  items-center gap-2 text-xl">
+                  <span className="text-4xl">$40</span>
+                  <span className="text-sm text-muted-foreground">
+                    {" "}
+                    / month
+                  </span>
+                </p>
+                <div className="flex flex-col gap-4 justify-start">
+                  <div className="flex flex-row gap-4">
+                    <Check className="w-4 h-4 mt-2 text-primary" />
+                    <div className="flex flex-col">
+                      <p>Fast and reliable</p>
+                      <p className="text-muted-foreground text-sm">
+                        We&apos;ve made it fast and reliable.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex flex-row gap-4">
+                    <Check className="w-4 h-4 mt-2 text-primary" />
+                    <div className="flex flex-col">
+                      <p>Fast and reliable</p>
+                      <p className="text-muted-foreground text-sm">
+                        We&apos;ve made it fast and reliable.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex flex-row gap-4">
+                    <Check className="w-4 h-4 mt-2 text-primary" />
+                    <div className="flex flex-col">
+                      <p>Fast and reliable</p>
+                      <p className="text-muted-foreground text-sm">
+                        We&apos;ve made it fast and reliable.
+                      </p>
+                    </div>
                   </div>
                 </div>
-              );
-            })}
-          </div>
+                <Button variant="outline" className="gap-4">
+                  Sign up today <MoveRight className="w-4 h-4" />
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+          <Card className="w-full shadow-2xl rounded-md">
+            <CardHeader>
+              <CardTitle>
+                <span className="flex flex-row gap-4 items-center font-normal">
+                  Growth
+                </span>
+              </CardTitle>
+              <CardDescription>
+                Our goal is to streamline SMB trade, making it easier and faster
+                than ever for everyone and everywhere.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-col gap-8 justify-start">
+                <p className="flex flex-row  items-center gap-2 text-xl">
+                  <span className="text-4xl">$40</span>
+                  <span className="text-sm text-muted-foreground">
+                    {" "}
+                    / month
+                  </span>
+                </p>
+                <div className="flex flex-col gap-4 justify-start">
+                  <div className="flex flex-row gap-4">
+                    <Check className="w-4 h-4 mt-2 text-primary" />
+                    <div className="flex flex-col">
+                      <p>Fast and reliable</p>
+                      <p className="text-muted-foreground text-sm">
+                        We&apos;ve made it fast and reliable.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex flex-row gap-4">
+                    <Check className="w-4 h-4 mt-2 text-primary" />
+                    <div className="flex flex-col">
+                      <p>Fast and reliable</p>
+                      <p className="text-muted-foreground text-sm">
+                        We&apos;ve made it fast and reliable.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex flex-row gap-4">
+                    <Check className="w-4 h-4 mt-2 text-primary" />
+                    <div className="flex flex-col">
+                      <p>Fast and reliable</p>
+                      <p className="text-muted-foreground text-sm">
+                        We&apos;ve made it fast and reliable.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <Button className="gap-4">
+                  Sign up today <MoveRight className="w-4 h-4" />
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+          <Card className="w-full rounded-md">
+            <CardHeader>
+              <CardTitle>
+                <span className="flex flex-row gap-4 items-center font-normal">
+                  Enterprise
+                </span>
+              </CardTitle>
+              <CardDescription>
+                Our goal is to streamline SMB trade, making it easier and faster
+                than ever for everyone and everywhere.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-col gap-8 justify-start">
+                <p className="flex flex-row  items-center gap-2 text-xl">
+                  <span className="text-4xl">$40</span>
+                  <span className="text-sm text-muted-foreground">
+                    {" "}
+                    / month
+                  </span>
+                </p>
+                <div className="flex flex-col gap-4 justify-start">
+                  <div className="flex flex-row gap-4">
+                    <Check className="w-4 h-4 mt-2 text-primary" />
+                    <div className="flex flex-col">
+                      <p>Fast and reliable</p>
+                      <p className="text-muted-foreground text-sm">
+                        We&apos;ve made it fast and reliable.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex flex-row gap-4">
+                    <Check className="w-4 h-4 mt-2 text-primary" />
+                    <div className="flex flex-col">
+                      <p>Fast and reliable</p>
+                      <p className="text-muted-foreground text-sm">
+                        We&apos;ve made it fast and reliable.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex flex-row gap-4">
+                    <Check className="w-4 h-4 mt-2 text-primary" />
+                    <div className="flex flex-col">
+                      <p>Fast and reliable</p>
+                      <p className="text-muted-foreground text-sm">
+                        We&apos;ve made it fast and reliable.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <Button variant="outline" className="gap-4">
+                  Book a meeting <PhoneCall className="w-4 h-4" />
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
         </div>
-        <div className="bg-muted rounded-md aspect-square"></div>
       </div>
-      <div className="flex flex-col md:flex-row gap-4 lg:w-full lg:content-stretch">
-            <Button size="lg" className="gap-4">
-            Venha explorar mais <RocketIcon className="w-4 h-4" />
-            </Button>
-          </div>
     </div>
   </div>
 );
