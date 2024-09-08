@@ -5,16 +5,16 @@ export const Footer = () => {
       description: "Managing a small business today is already tough.",
       items: [
         {
-          title: "Landing Page",
-          href: "#landingpage",
+          title: "Soluções Digitais",
+          href: "#digitalsolution",
         },
         {
-          title: "E-Commerce",
-          href: "#ecommerce",
+          title: "Conexões Inteligentes",
+          href: "#smartintegration",
         },
         {
-          title: "CRM",
-          href: "#crm",
+          title: "IA Aplicada",
+          href: "#ai",
         },
       ],
     },

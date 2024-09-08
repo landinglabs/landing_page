@@ -1,5 +1,6 @@
-import { Check } from "lucide-react";
+import { Check, PhoneCallIcon, RocketIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "../ui/button";
 
 interface FeaturesProps {
   header: string;
@@ -53,6 +54,11 @@ export const Features = (props: FeaturesProps) => (
         </div>
         <div className="bg-muted rounded-md aspect-square"></div>
       </div>
+      <div className="flex flex-col md:flex-row gap-4 lg:w-full lg:content-stretch">
+            <Button size="lg" className="gap-4">
+            Venha explorar mais <RocketIcon className="w-4 h-4" />
+            </Button>
+          </div>
     </div>
   </div>
 );
