@@ -1,5 +1,6 @@
 import { MoveRight, PhoneCallIcon, RocketIcon } from "lucide-react";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export const Hero = () => (
   <div className="w-full relative overflow-hidden py-12 lg:py-16 ">
@@ -23,9 +24,11 @@ export const Hero = () => (
           </p>
         </div>
         <div className="flex flex-col md:flex-row gap-4">
-          <Button size="lg" className="gap-4" variant="outline">
-            Venha explorar mais <RocketIcon className="w-4 h-4" />
-          </Button>
+          <Link href="">
+            <Button size="lg" className="gap-4" variant="outline">
+              Venha explorar mais <RocketIcon className="w-4 h-4" />
+            </Button>
+          </Link>
           <Button size="lg" className="gap-4">
             Comece agora! <PhoneCallIcon className="w-4 h-4" />
           </Button>
