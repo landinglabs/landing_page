@@ -3,25 +3,20 @@ import Link from "next/link";
 export const Footer = () => {
   const navigationItems = [
     {
-      title: "Início",
-      href: "#home",
-      description: "",
-    },
-    {
       title: "Produtos",
       description: "Managing a small business today is already tough.",
       items: [
         {
           title: "Soluções Digitais",
-          href: "#digitalsolution",
+          href: "#features",
         },
         {
           title: "Integração entre sistemas",
-          href: "#smartintegration",
+          href: "#features",
         },
         {
           title: "IA Aplicada",
-          href: "#ai",
+          href: "#features",
         },
       ],
     },
@@ -29,10 +24,6 @@ export const Footer = () => {
       title: "Empresa",
       description: "Managing a small business today is already tough.",
       items: [
-        {
-          title: "Sobre nós",
-          href: "/",
-        },
         {
           title: "Fale conosco",
           href: "/",
@@ -62,16 +53,7 @@ export const Footer = () => {
                 className="flex text-base gap-1 flex-col items-start"
               >
                 <div className="flex flex-col gap-2">
-                  {item.href ? (
-                    <a
-                      href={item.href}
-                      className="flex justify-between items-center"
-                    >
-                      <span className="text-xl">{item.title}</span>
-                    </a>
-                  ) : (
-                    <p className="text-xl">{item.title}</p>
-                  )}
+                  <p className="text-xl">{item.title}</p>
                   {item.items &&
                     item.items.map((subItem) => (
                       <a
