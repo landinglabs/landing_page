@@ -50,7 +50,7 @@ export const Footer = () => {
             {navigationItems.map((item) => (
               <div
                 key={item.title}
-                className="flex text-base gap-1 flex-col items-start py-4"
+                className="flex text-base gap-1 flex-col items-start py-4 md:p-4"
               >
                 <div className="flex flex-col gap-2">
                   <p className="text-xl">{item.title}</p>
