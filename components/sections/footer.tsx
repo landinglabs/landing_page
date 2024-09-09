@@ -46,7 +46,7 @@ export const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="grid lg:grid-cols-3 gap-10 items-start">
+          <div className="flex gap-10 items-start justify-end">
             {navigationItems.map((item) => (
               <div
                 key={item.title}

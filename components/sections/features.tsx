@@ -81,7 +81,7 @@ export const Features = () => {
   ];
 
   return (
-    <div className="w-full p-8">
+    <div className="w-full p-8" id="features">
       <div className="container mx-auto">
         <div className="flex text-center justify-center items-center gap-4 flex-col">
           <div className="flex gap-2 flex-col">
