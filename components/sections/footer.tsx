@@ -16,7 +16,7 @@ export const Footer = () => {
           href: "#digitalsolution",
         },
         {
-          title: "Conexões Inteligentes",
+          title: "Integração entre sistemas",
           href: "#smartintegration",
         },
         {

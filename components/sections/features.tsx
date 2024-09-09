@@ -35,7 +35,7 @@ export const Features = () => {
       ],
     },
     {
-      header: "Conexões Inteligentes",
+      header: "Integração entre sistemas",
       description:
         "Automatize processos e conecte suas plataformas para operar sem limites!",
       bulletpoints: [
