@@ -46,11 +46,11 @@ export const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="flex gap-10 items-start justify-end">
+          <div className="flex-col md:flex items-start justify-end">
             {navigationItems.map((item) => (
               <div
                 key={item.title}
-                className="flex text-base gap-1 flex-col items-start"
+                className="flex text-base gap-1 flex-col items-start py-4"
               >
                 <div className="flex flex-col gap-2">
                   <p className="text-xl">{item.title}</p>
