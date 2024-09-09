@@ -46,7 +46,7 @@ export const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="flex-col md:flex items-start justify-end">
+          <div className="flex flex-col md:flex-row items-start justify-end">
             {navigationItems.map((item) => (
               <div
                 key={item.title}
