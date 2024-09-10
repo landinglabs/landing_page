@@ -9,10 +9,11 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 require('dotenv').config();
 
 export const Features = () => {
-  const waLink = process.env.WALINK;
+  const waLink: string = process.env.WALINK!;
   const features = [
     {
       header: "Soluções Digitais",
@@ -84,7 +85,6 @@ export const Features = () => {
 
   return (
     <div className="w-full p-8" id="features">
-      <p>{waLink}</p>
       <div className="container mx-auto">
         <div className="flex text-center justify-center items-center gap-4 flex-col">
           <div className="flex gap-2 flex-col">
@@ -132,9 +132,11 @@ export const Features = () => {
                   </div>
                 </CardContent>
                 <CardFooter>
+                  <Link href={waLink}>
                   <Button variant="outline" className="gap-4">
                     Saiba mais <MoveRight className="w-4 h-4" />
                   </Button>
+                  </Link>
                 </CardFooter>
               </Card>
             ))}
