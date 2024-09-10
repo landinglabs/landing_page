@@ -1,6 +1,7 @@
-import Link from "next/link";
+require("dotenv").config();
 
 export const Footer = () => {
+  const waLink: string = process.env.WALINK!;
   const navigationItems = [
     {
       title: "Produtos",
@@ -26,7 +27,7 @@ export const Footer = () => {
       items: [
         {
           title: "Fale conosco",
-          href: "/",
+          href: waLink,
         },
       ],
     },
