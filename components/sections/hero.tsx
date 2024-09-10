@@ -6,7 +6,7 @@ require("dotenv").config();
 export const Hero = () => {
   const waLink: string = process.env.WALINK!;
   return (
-    <div className="w-full relative overflow-hidden py-12 lg:py-16 ">
+    <div className="w-full relative overflow-hidden ">
       <div
         aria-hidden="true"
         className="flex absolute -top-96 start-1/2 transform -translate-x-1/2 -z-10"
@@ -26,14 +26,14 @@ export const Hero = () => {
               projetadas para impulsionar o seu sucesso.
             </p>
           </div>
-          <div className="flex flex-col md:flex-row gap-4">
-            <Link href="">
+          <div className="flex flex-col md:flex-row gap-4 items-center">
+            <Link href="#features">
               <Button size="lg" className="gap-4" variant="outline">
                 Venha explorar mais <RocketIcon className="w-4 h-4" />
               </Button>
             </Link>
             <Link href={waLink}>
-              <Button size="lg" className="gap-4">
+              <Button size="lg" className="gap-4 ">
                 Comece agora! <PhoneCallIcon className="w-4 h-4" />
               </Button>
             </Link>
