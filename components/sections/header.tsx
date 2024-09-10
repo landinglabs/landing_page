@@ -13,7 +13,7 @@ export const Header = () => {
       <div className="container relative mx-auto min-h-20 flex gap-4 flex-row lg:grid lg:grid-cols-3 items-center">
         <div className="justify-start items-center gap-4 lg:flex hidden flex-row"></div>
         <div className="flex lg:justify-center">
-          <p className="font-semibold">LandingLabs</p>
+          <p className="font-semibold">LandingLabs™</p>
         </div>
         <div className="flex justify-end w-full gap-4">
           <Button className="hidden md:inline" variant="outline">Nossos produtos</Button>
