@@ -1,6 +1,6 @@
-import Link from "next/link";
-
+require("dotenv").config();
 export const Footer = () => {
+  const wppLink: string = process.env.WALINK!;
   const navigationItems = [
     {
       title: "Produtos",
@@ -26,12 +26,11 @@ export const Footer = () => {
       items: [
         {
           title: "Fale conosco",
-          href: "/",
+          href: wppLink,
         },
       ],
     },
   ];
-
   return (
     <div className="w-full py-20 lg:py-40 bg-foreground text-background p-8 md:p-24">
       <div className="container mx-auto">
